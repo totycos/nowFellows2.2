@@ -17,7 +17,12 @@ class User::OmniauthCallbacksController < Devise::OmniauthCallbacksController
      session["devise.facebook_data"] = request.env["omniauth.auth"]
      redirect_to new_user_registration_url
    end
+
+   puts "===="
+   puts request.env["omniauth.auth"].inspect #pour visualiser ce que omniauth recupere
+   puts "===="
  end
+
 
  def failure
    redirect_to root_path
