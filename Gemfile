@@ -36,7 +36,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
+gem 'jquery-rails'
 gem 'bootstrap-sass'
+gem 'bootstrap-social-rails'
+gem 'font-awesome-rails'
+gem 'google-webfonts-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

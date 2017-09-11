@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => { :omniauth_callbacks => "user/omniauth_callbacks" }
 
-  root 'home#redirection'
-  get 'home/redirection'
+  root 'home#connexion'
+  get 'connexion' => 'home#connexion'
   get 'show' => 'users#show'
   #devise_scope :user do
   #  root to: "devise/sessions#new"

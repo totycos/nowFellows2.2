@@ -1,1 +1,20 @@
-show
+<div class=profil2>
+  <h1>Profil</h1>
+</div>
+
+<div class=profil1>
+  <h4>Email</h4>
+  <%= current_user.email %>
+  </br>
+  <%= link_to "Edit profil", edit_user_registration_path %> </br>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+</div>
+
+<div class=onglets>
+  <div class=ongletChat>
+    <%= image_tag("iconeChat.png", id: "iconeChat") %>
+  </div>
+  <div class=ongletProfil>
+    <%= image_tag("iconeProfil.png", id: "iconeProfil") %>
+  </div>
+</div>

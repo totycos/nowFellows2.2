@@ -1,10 +1,8 @@
 class HomeController < ApplicationController
 
-  def redirection
+  def connexion
     if user_signed_in?
-       redirect_to show_url
-    else
-       redirect_to new_user_session_url
+       redirect_to show_path
     end
   end
 
